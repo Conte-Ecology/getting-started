@@ -96,9 +96,22 @@ To add files to the repo:
 git add filename
 ```
 
-**********Add .gitignore with .RData****************
+Before committing, be sure to setup a *.gitignore* file to prevent any large files from committed and causing problems with pushing to GitHub. You should also ignore anything that you don't want shared publicly including private information. To do this, just open up a text file and add a list of file names that you want git to ignore. A `*` indicates any list of characters (e.g. `*.RData` will ignore all files ending in `.RData`). For example,
 
-To commit the changes to the repo (and include a descriptive message of those changes):
+```
+*.RData
+*.pdf
+MassiveFile.txt
+*.tiff
+*.jpg
+private_information.txt
+phone_number.md
+Sensitive_Data.csv
+```
+
+Then just save this text file as `.gitignore` with no file name before the extension. Git automatically looks for this file to find what to ignore.
+
+Now, to commit the changes to the repo (and include a descriptive message of those changes):
 
 ```
 git commit -m "This is my first commit"

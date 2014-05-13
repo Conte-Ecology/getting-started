@@ -29,6 +29,10 @@ If Git is already tracking a particular file, Git __will not__ ignore that file 
 git rm --cached filename
 ```
 
+### Addressing Conflicts
+
+Great instructions on how to view and address conflicts when trying to merge files: [https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line)
+
 ### Tutorials and References
 
 Git Workflows: [https://www.atlassian.com/git/workflows](https://www.atlassian.com/git/workflows)
